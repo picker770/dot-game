@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Dot game</title>
+</head>
+<body>
+    <div id="gameboard">
+        <div id="destination"></div>
+        <img src="assets/images/jo-avatar.png" alt="player icon" id="player" style="top:3px; left:2.5px">
+        <!-- inline style added for starting values in move() function -->
+    <div id="buttons">
+        <div class="row">
+            <button data-direction="up">Up</button>
+        </div>
+        <div class="row">
+            <button data-direction="left">Left</button>
+            <button data-direction="right">Right</button>
+        </div>
+        <div class="row">
+            <button data-direction="down">Down</button>
+        </div>
+    </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
