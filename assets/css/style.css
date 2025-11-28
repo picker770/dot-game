@@ -1,0 +1,45 @@
+#gameboard {
+    display: flex;
+    position: relative;
+    height: 159px;
+    width: 508px;
+    margin: 50px auto;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(45deg, #ccc 25%, transparent 25%),
+        linear-gradient(135deg, #ccc 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #ccc 75%),
+        linear-gradient(135deg, transparent 75%, #ccc 75%);
+    background-size: 25px 25px; /* Must be a square */
+    background-position: 0 0, 12.5px 0, 12.5px -12.5px, 0px 12.5px; /* Must be half of one side of the square */
+    border: 5px solid #4a4a4f;
+}
+
+#destination {
+    background-color: #e84610;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+#player {
+    width: 25px;
+    border-radius: 50%;
+    position:absolute;
+    border: 2px solid #e84610;
+}
+
+#buttons {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+#buttons .row {
+    text-align: center;
+}
+
+#buttons button {
+    height: 20px;
+    width: 50px;
+}
